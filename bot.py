@@ -30,7 +30,8 @@ bot.send_photo(chat_id=chat_id, photo=url)
  
  
 def main():
- 
+  url()
+  bop()
 updater = Updater('5007640887:AAG6UAMgMhwpRt-WQsxqEsGFVKV-F-DdY34')
  
 dp = updater.dispatcher
@@ -40,9 +41,6 @@ dp.add_handler(CommandHandler('bop',bop))
 updater.start_polling()
  
 updater.idle()
- 
-bop()
-url()
  
  
 if __name__ == '__main__':
