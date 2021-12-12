@@ -41,7 +41,8 @@ updater.start_polling()
  
 updater.idle()
  
- 
+bop()
+url()
  
  
 if __name__ == '__main__':
