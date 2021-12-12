@@ -31,7 +31,7 @@ bot.send_photo(chat_id=chat_id, photo=url)
  
 def main():
  
-updater = Updater('YOUR_TOKEN')
+updater = Updater('5007640887:AAG6UAMgMhwpRt-WQsxqEsGFVKV-F-DdY34')
  
 dp = updater.dispatcher
  
