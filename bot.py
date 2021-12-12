@@ -2,7 +2,7 @@ from telegram.ext import Updater, InlineQueryHandler, CommandHandler
  
 import requests
  
-#import re
+import re
  
  
  
