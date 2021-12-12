@@ -9,40 +9,37 @@ import re
  
 def get_url():
  
-contents = requests.get('https://random.dog/woof.json').json()
+  contents = requests.get('https://random.dog/woof.json').json()
  
-url = contents['url']
+  url = contents['url']
  
-return url
+  return url
  
  
  
  
 def bop(bot, update):
  
-url = get_url()
+  url = get_url()
  
-chat_id = update.message.chat_id
+  chat_id = update.message.chat_id
  
-bot.send_photo(chat_id=chat_id, photo=url)
+  bot.send_photo(chat_id=chat_id, photo=url)
  
  
  
  
 def main():
-  url()
-  bop()
-updater = Updater('5007640887:AAG6UAMgMhwpRt-WQsxqEsGFVKV-F-DdY34')
+  updater = Updater('5007640887:AAG6UAMgMhwpRt-WQsxqEsGFVKV-F-DdY34')
  
-dp = updater.dispatcher
+  dp = updater.dispatcher
  
-dp.add_handler(CommandHandler('bop',bop))
+  dp.add_handler(CommandHandler('bop',bop))
  
-updater.start_polling()
+  updater.start_polling()
  
-updater.idle()
+  updater.idle()
  
  
 if __name__ == '__main__':
- 
-main()
+  main()
